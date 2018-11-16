@@ -1,0 +1,18 @@
+#body-main .noscriptClass {
+	color: red;
+	font-size: 20px;
+}
+
+#eheader .firstDiv {
+	color: red;
+	font-size: 30px;
+}
+
+#eheader .welcomeMessage {
+	color: green;
+	font-style: italic;
+}
+
+.homePageHeader {
+	color: green;
+}
