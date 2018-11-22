@@ -3,30 +3,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
+	<c:set var="pageType" value="home" scope="application" />
 	<head>
 		<header:headHelper />
-		
-		<!-- 1st Method to include css file -->
-		<!-- Initializing a variable for all css files -->
-		<%-- <spring:url value="/resources/css" var="cssUrl" />
-		<link href="${cssUrl}/homepage.css" rel="stylesheet" /> --%>
-		
-		<!-- 2nd Method to include css using var from another tag -->
-		<!-- cssUrl is coming from homepageVariables.tag -->
-		<link href="${cssUrl}/homepage.css" rel="stylesheet" />
-		
-		<!-- 1st Method to include js file -->
-		<%-- <spring:url value="/resources/js" var="jsUrl" />
-		<script src="${jsUrl }/homepage.js"></script> --%>
-		
-		<!-- 2nd Method Including js using jsVar which is coming from homepageVariables.js -->
-		<script type="text/javascript" src="${jsUrl}/homepage.js" ></script>
-		
+
+		<header:headResourceIncluder />
 	</head>
 	<body>
-		<div id="body-main">
+		<div id="body-main" class="mayar homepage">
 			<noscript class="noscriptClass">
-				<p>Sorry, Your browser does not support Javascript</p>
+				Javascript not supporting message
+				<p>
+					<strong>
+						<spring:message code="javascript.notsupported.message"></spring:message>
+					</strong>
+				</p>
 			</noscript>
 			<div id="eheader">
 				<header:homepageHeader/>

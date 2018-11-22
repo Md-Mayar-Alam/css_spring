@@ -3,6 +3,7 @@ package com.controller;
 import java.util.ArrayList;
 import java.util.Locale;
 
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.stereotype.Controller;
@@ -19,10 +20,12 @@ public class MyController
 	@Autowired
 	ReloadableResourceBundleMessageSource messageSource;
 	
+	private static final Logger logger = Logger.getLogger(MyController.class);
+	
 	@RequestMapping(value="/index", method=RequestMethod.GET)
 	public String getIndexPage()
 	{
-		
+		logger.debug("index is exceuted");
 		return "index";
 	}
 	

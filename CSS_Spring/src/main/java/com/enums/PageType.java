@@ -3,7 +3,9 @@ package com.enums;
 import org.apache.commons.lang3.StringUtils;
 
 public enum PageType {
+	HOME("home", "HomePage", "/homepage"),
 	SEARCH("search", "SearchPage", "/search"),
+	ACCOUNT("account", "AccountPage", "/account"),
 	CATEGORY("category", "CategoryPage","/category");
 	
 	private String context;
