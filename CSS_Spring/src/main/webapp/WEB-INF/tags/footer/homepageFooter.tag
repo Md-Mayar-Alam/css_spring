@@ -2,5 +2,5 @@
 <div id="eFooter">
 	<div class="footerContainer">
 		<spring:message code="footer.copyright.message">${currentYear }</spring:message>
-	</div>
+	</div><P></P>
 </div>
