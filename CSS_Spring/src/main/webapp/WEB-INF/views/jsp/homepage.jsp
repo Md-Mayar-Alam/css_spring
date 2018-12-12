@@ -1,5 +1,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="header" tagdir="/WEB-INF/tags/header"%>
+<%@ taglib prefix="footer" tagdir="/WEB-INF/tags/footer" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
@@ -19,9 +20,9 @@
 					</strong>
 				</p>
 			</noscript>
-			<div id="eheader">
-				<header:homepageHeader/>
-			</div>
+			
+			<header:homepageHeader/>
+			
 			<p>nameList= ${nameList}</p>
 			<div class="nameList">
 				<c:forEach items="${nameList}" var="name">
@@ -31,6 +32,9 @@
 					<p>List item is= ${listNew }</p>
 				</c:forEach>
 			</div>
+			
+			<!-- Code For Footer -->
+			<footer:homepageFooter />
 		</div>
 	</body>
 </html>

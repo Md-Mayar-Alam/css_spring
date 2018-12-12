@@ -17,3 +17,12 @@
 		</li>
 	</ul>
 </div>
+<div>
+	<ul>
+		<li class="ribbonItemNav">
+			<a href="/test" target="_self">
+				<spring:message code="header.ribbonItemNav.test.message"></spring:message>
+			</a>
+		</li>
+	</ul>
+</div>

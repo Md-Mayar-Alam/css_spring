@@ -1,6 +1,7 @@
 package com.controller;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Locale;
 
 import org.apache.log4j.Logger;
@@ -51,6 +52,9 @@ public class MyController
 		model.addAttribute("customer", new Customer("Alam",8676072061L));
 		String welcomeMessage=messageSource.getMessage("welcome.message", null, null);
 		model.addAttribute("welcomeMessage", welcomeMessage);
+		
+		int currentYear=Calendar.getInstance().get(Calendar.YEAR);
+		model.addAttribute("currentYear", currentYear);
 		return "homepage";
 	}
 }

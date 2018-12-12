@@ -31,8 +31,8 @@ html, body, div, a{
 	font-size: 11px;
 	background-color: yellow; /* #ffffff; */		/* white */
 	position: relative;
-	line-height: 13px;
-	min-height: 31px;
+	line-height: 17px;
+	min-height: 42px;
 	z-index: 13;
 }
 
@@ -41,10 +41,31 @@ html, body, div, a{
 	/* margin: 0 auto; */
 }
 
+#eheader #authNav{
+	margin-left: 116px;
+}
+
+#eheader #userAuthLinks{
+	float: right;
+	background-color: #eeeeee; /* Grey */
+	position: relative;
+	font-weight: 700;
+	margin-right: -291px;
+    margin-top: 0px;
+}
+
 #eheader #authNav a{
+	font-size: 13px;
 	text-decoration: none;
-	/* margin: 0 auto; */
 	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+#eheader #userAuthLinks a{
+	font-size: 13px;
+	text-decoration: none;
+	cursor: pointer;
+	letter-spacing: 1px;
 }
 
 #eheader #authNav ol,ul{
@@ -55,32 +76,115 @@ html, body, div, a{
 	float: left;
 }
 
+#eheader #userAuthLinks div{
+	float: right;
+}
+
 #eheader #authNav > div ul{
 	float: left;
+	padding: 0px 7px 0px 11px;
+}
+
+#eheader #userAuthLinks > div ul{
+	padding: 0px 10px 0px 15px;
 }
 
 #eheader #authNav > div ul li{
 	float: left;
 }
 
-
 #eheader #authNav > div:before{
 	content: "\007C";
 	font-size: 11px;	/* same size as the font */
-	font-weight: 500;
+	font-weight: 700;
 	color: #A4A3A3;		/* Grey */
-	margin: 0px 0px 0px 0px;	/* top-right-bottom-left */
+	margin: 10px 0px 0px 5px;	/* top-right-bottom-left */
 	float: left;	
 }
 
+#eheader #authNav > div:first-child:before{
+	display: none;
+}
+
+#eheader #userAuthLinks > div:before{
+	content: "\007C";
+	font-size: 11px;	/* same size as the font */
+	font-weight: 700;
+	color: #A4A3A3;		/* Grey */
+	margin: 10px 0px 0px 5px;	/* top-right-bottom-left */
+	float: right;
+}
+
+#eheader #userAuthLinks > div:first-child:before{
+	display: none;
+}
+
+/* FOR FOOTER STARTS */
+
+#eFooter .footerContainer{
+	color: #cccccc;	/* Grey */
+	background-color: #333333; /* Dark Grey */
+	text-align: center;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	min-height: 38px;
+	line-height: 40px;
+}
+
+/* FOR FOOTER ENDS */
+
+/* FOR HEADER SEARCH STARTS */
+#navSearchContainer{
+	color: white;
+	background-color: #424242; /* light Grey */
+	min-height: 40px;
+}
+
+#navSearchContainer #allProducts{
+	color: #ffffff; 	/* white */
+	background-color: transparent;
+	float: right;
+}
+
+#navSearchContainer #search{
+	width: 362px;
+	line-height: 25px;
+}
+
+/* FOR HEADER SEARCH ENDS */
 
 
+/* BOOTSTRAP CLASSES STARTS */
 
+.row {
+	margin-right: -15px;
+	margin-left: -15px
+}
 
+.row:after, .row:before{
+	display: table;
+	content: " ";
+}
 
+.col-md-4{
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+	border: 1px solid red;
+}
 
+@media (min-width : 992px){
+	.col-md-4{
+		float: left;
+	}
+	.col-md-4{
+		width: 30.5%;
+	}
+}
 
-
+/* BOOTSTRAP CLASSES ENDS */
 
 
 

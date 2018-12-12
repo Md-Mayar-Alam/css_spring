@@ -8,6 +8,8 @@
 
 <!-- Always Include -->
 <link rel="stylesheet" type="text/css" href="${cssUrl }/site.css" />
+<%-- <link rel="stylesheet" type="text/css" href="${cssUrl }/bootstrap/3.3.7/bootstrap.min.css" /> --%>
+<script type="text/javascript" src="${jsUrl }/site.js" ></script>
 
 <c:choose>
 	<c:when test="${pageType eq 'home'}">
