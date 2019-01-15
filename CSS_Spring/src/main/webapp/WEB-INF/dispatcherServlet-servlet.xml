@@ -12,6 +12,7 @@
 <!-- 	This is used to initiate the scan for SpringWebConfig file in com.spring package				 -->
 	<context:component-scan base-package="com.controller, com.config" />
 	
+	<!-- Used to scan @RequestMapping -->
 	<mvc:annotation-driven />
 	
 <!-- This is xml configuration to addResourceHandler like resources 

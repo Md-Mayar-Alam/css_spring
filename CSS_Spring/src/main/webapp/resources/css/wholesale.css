@@ -1,0 +1,128 @@
+@charset "UTF-8";
+
+body {
+	margin: 0 auto;
+	padding: 0;
+}
+.test{
+	color: red;
+}
+
+.main-container{
+	background-color: yellow;
+	width: 100%;
+	height: auto;
+}
+
+.main-container .zemez{
+	position: absolute;
+	top: 36px;
+	left: 34px;
+	width: 234px;
+	height: 67px;
+	background: #6e8af5;
+	border-radius: 30px;
+}
+
+.zemez .zemez-font{
+	color: white;
+	font-size: 34px;
+	position: relative;
+	top: 15px;
+	text-align: center;
+}
+
+.main-container .orange-triangle{
+	position: absolute;
+	top: 83px;
+	width: 0;
+	height: 0;
+  	border-right: 467px solid transparent;
+	border-bottom: 474px solid #f86e30;  
+}
+
+.orange-triangle .orange-pink-tri{
+	position: absolute;
+	top: 184px;
+	width: 0;
+	height: 0;
+	border-right: 181px solid #d03091;
+	border-top: 187px solid transparent;
+}
+
+.orange-triangle .rectangle{
+	position: absolute;
+	top: 0px;
+	width: 181px;
+	height: 100px;
+	background: #d03091;
+}
+
+.main-container .vertical-bar{
+	position: absolute;
+	top: 471px;
+	width: 31px;
+	height: 440px;
+	background: #d03091;
+}
+
+.main-container .small-orng-tri{
+	position: absolute;
+	top: 142px;
+	left: 315px;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-left: 36px solid green;
+} 
+
+.main-container .small-pink-tri{
+	position: absolute;
+	top: -19px;
+	left: -54px;
+	width: 0;
+	height: 0;
+	border-top: 36px solid transparent;
+	border-right: 36px solid #ff00ff;
+} 
+
+.main-container .small-blue-tri{
+	position: absolute;
+	top: 16px;
+	left: -54px;
+	width: 0;
+	height: 0;
+	border-right: 36px solid blue;
+	border-bottom: 36px solid transparent;
+} 
+
+.main-container .small-sky-tri{
+	position: absolute;
+	top: 16px;
+	left: -54px;
+	width: 0;
+	height: 0;
+	border-top: 36px solid red;
+	border-left: 36px solid green;
+	border-right: 36px solid blue;
+	border-bottom: 36px solid #50d0f5;
+} 
+
+
+
+.main-container .container{
+	position: relative;
+	top: 547px;
+	left: 31px; 
+	width: 933px;
+	height: 442px;
+	background: green;
+}
+
+.container .top-band{
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 19px;
+	background: #f86e30;
+}

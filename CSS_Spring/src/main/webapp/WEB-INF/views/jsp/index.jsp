@@ -9,6 +9,7 @@
 		<div class="homeClass">
 			<h2>Hello World!</h2>
 			<a href="/CSS_Spring/homepage">Go To Homepage</a>
+			<a href="/CSS_Spring/wholesale">Wholesale Page</a>
 		</div>
 	</body>
 </html>

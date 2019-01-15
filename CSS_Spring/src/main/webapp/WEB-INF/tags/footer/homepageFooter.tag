@@ -3,7 +3,4 @@
 	<div class="footerContainer">
 		<spring:message code="footer.copyright.message">${currentYear }</spring:message>
 	</div>
-	<div>
-	
-	</div>
 </div>
